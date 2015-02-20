@@ -162,7 +162,8 @@ module Octopus
   end
 end
 
-ActiveRecord::Migration.send(:include, Octopus::Migration)
-ActiveRecord::Migrator.send(:include, Octopus::Migrator)
-ActiveRecord::MigrationProxy.send(:include, Octopus::MigrationProxy)
-ActiveRecord::UnknownMigrationVersionError.send(:include, Octopus::UnknownMigrationVersionError)
+# TODO: Make this dependent on config attribute, then test and create pull request
+# ActiveRecord::Migration.send(:include, Octopus::Migration)
+# ActiveRecord::Migrator.send(:include, Octopus::Migrator)
+# ActiveRecord::MigrationProxy.send(:include, Octopus::MigrationProxy)
+# ActiveRecord::UnknownMigrationVersionError.send(:include, Octopus::UnknownMigrationVersionError)
